@@ -32,6 +32,7 @@ import {
 	Retail,
 	Statistical,
 	Practice
+	Test,
 } from '../Containers';
 
 import Master from '../master';
@@ -82,6 +83,11 @@ export default (
 			<Route path="index" component={Practice.Demo1}/>
 		</Route>
 
+		
+		{/*练习*/}
+		<Route path="test" component={Basic}>
+			<Route path="demo1" component={Test.Demo1}/>
+		</Route>
 
 
 		{/*社区经营*/}
