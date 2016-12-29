@@ -30,7 +30,8 @@ import {
 	Member,
 	Community,
 	Retail,
-	Statistical
+	Statistical,
+	Test,
 } from '../Containers';
 
 import Master from '../master';
@@ -76,7 +77,11 @@ export default (
 			<IndexRedirect to="index" />
 		</Route>
 
-
+		
+		{/*练习*/}
+		<Route path="test" component={Basic}>
+			<Route path="demo1" component={Test.Demo1}/>
+		</Route>
 
 		{/*社区经营*/}
 		<Route path="community" component={Basic}>

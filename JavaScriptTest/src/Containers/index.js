@@ -13,6 +13,7 @@ import Community from './Community';
 import Retail from './Retail';
 import OA from './OA';
 import Statistical from './Statistical';
+import Test from './Test';
 
 module.exports = {
 	Welcome,
@@ -29,5 +30,6 @@ module.exports = {
 	Community,
 	Retail,
 	OA,
-	Statistical
+	Statistical,
+	Test
 }
