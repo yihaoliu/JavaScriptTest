@@ -30,7 +30,8 @@ import {
 	Member,
 	Community,
 	Retail,
-	Statistical
+	Statistical,
+	Practice
 } from '../Containers';
 
 import Master from '../master';
@@ -74,6 +75,11 @@ export default (
 		<Route path="statistical" component={Basic}>
 			<Route path="index" component={Statistical.Home}/>
 			<IndexRedirect to="index" />
+		</Route>
+
+	    {/*练习*/}
+		<Route path="practice" component={Basic}>
+			<Route path="index" component={Practice.Demo1}/>
 		</Route>
 
 
